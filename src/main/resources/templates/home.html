@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}" />
+</head>
+<body>
+
+    <h3>Weather App</h3>
+
+    <div>
+        <form th:action="@{/process-current-weather}" method="post">
+            <label for="city"> Enter a city :</label>
+            <input type="text" id="city" name="city" required>
+            <input type="submit" value="submit">
+        </form>
+    </div>
+
+</body>
+</html>

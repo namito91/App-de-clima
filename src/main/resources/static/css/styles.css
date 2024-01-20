@@ -1,0 +1,49 @@
+* {
+ font-family:sans-serif;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color:white;
+}
+
+div {
+  border-radius: 5px;
+  background-color: aliceblue;
+  padding: 20px;
+}
+
+.error{
+  color:red;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 6px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+h3 {
+
+ text-align:center;
+
+}

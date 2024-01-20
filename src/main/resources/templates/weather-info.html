@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}" />
+</head>
+<body>
+
+    <h3>Weather App</h3>
+
+    <h4>City info</h4>
+
+    <div>
+    <p> Weather : <span th:text="${mainWeather}"></span> </p>
+
+    <p> description : <span th:text="${description}"></span> </p>
+
+    <img th:src="${weatherUrl}" alt="Weather Icon"/>
+    </div>
+
+    <br>
+
+    <div>
+    <p> city : <span th:text="${city}"></span> </p>
+
+    <p> country : <span th:text="${country}"></span> </p>
+
+    <p> state : <span th:text="${state}"></span> </p>
+
+    <p> temperature : <span th:text="${temperature} + ' °C'"></span></p>
+
+    <p> feels like : <span th:text="${feelsLike} + ' °C'"></span></p>
+
+    <p> temp min : <span th:text="${tempMin} + ' °C'"></span></p>
+
+    <p> temp max : <span th:text="${tempMax} + ' °C'"></span></p>
+
+    <p> pressure : <span th:text="${pressure} + ' hPA'"></span></p>
+
+    <p> humidity :  <span th:text="${humidity} + ' %'"></span></p>
+    </div>
+
+    <br>
+
+    <a th:href="@{/index}"> go back </a>
+
+</body>
+</html>
